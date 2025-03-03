@@ -1,0 +1,20 @@
+import React from "react";
+
+const PromptSuggestionButton = ({
+  text,
+  onclick,
+}: {
+  text: any;
+  onclick: any;
+}) => {
+  return (
+    <button
+      className="bg-white text-black rounded-lg px-3 py-2 p-3 m-2 font-medium"
+      onClick={onclick}
+    >
+      {text}
+    </button>
+  );
+};
+
+export default PromptSuggestionButton;
