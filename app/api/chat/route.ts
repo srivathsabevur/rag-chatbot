@@ -45,7 +45,7 @@ export async function POST(req: Request) {
         limit: 10,
       });
       const documents = await cursor.toArray();
-      const docsMap = documents?.map((doc: any) => doc.text);
+      const docsMap = documents?.map((doc) => doc.text);
       docContext = JSON.stringify(docsMap);
     } catch (error) {
       console.log(error.message);

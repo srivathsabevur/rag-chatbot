@@ -1,11 +1,11 @@
-import React from "react";
+import React, { MouseEventHandler } from "react";
 
 const PromptSuggestionButton = ({
   text,
   onclick,
 }: {
-  text: any;
-  onclick: any;
+  text: string;
+  onclick: MouseEventHandler;
 }) => {
   return (
     <button

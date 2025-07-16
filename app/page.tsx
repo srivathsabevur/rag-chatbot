@@ -17,7 +17,7 @@ const Page = () => {
     append,
   } = useChat();
 
-  let noMessages = !messages || messages.length === 0;
+  const noMessages = !messages || messages.length === 0;
 
   const handlePromptSuggestions = (promptText: string) => {
     const msg: Message = {
